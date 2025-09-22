@@ -46,7 +46,7 @@
 }
 
 * {
-  border-color: hsl(var(--border));
+  border-color: oklch(0.922 0 0));
 }
 
 body {
