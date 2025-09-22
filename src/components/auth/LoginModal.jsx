@@ -102,12 +102,7 @@ const LoginModal = ({ onClose, onLogin }) => {
         <div className="px-6 pb-6">
           <div className="text-sm text-muted-foreground">
             <p className="mb-2">Usuários de teste:</p>
-            <div className="bg-muted p-3 rounded-md text-xs space-y-1">
-              <div><strong>admin</strong> / admin123</div>
-              <div><strong>maria.santos</strong> / maria123</div>
-              <div><strong>carlos.oliveira</strong> / carlos123</div>
-              <div><strong>ana.costa</strong> / ana123</div>
-            </div>
+            <div className="bg-muted p-3 rounded-md text-xs space-y-1"></div>
           </div>
         </div>
       </div>
