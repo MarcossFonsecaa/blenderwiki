@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "Introdução ao Blender 3D",
+    "description": "Guia completo para iniciantes no Blender, cobrindo desde a interface básica até modelagem 3D.",
+    "image": "/api/placeholder/300/200",
+    "tags": ["blender", "3d", "modelagem", "iniciante"],
+    "author": "João Silva",
+    "authorRole": "3D Artist",
+    "likes": 45,
+    "saves": 23,
+    "comments": 12,
+    "downloads": 156,
+    "createdAt": "2024-01-15",
+    "category": "tutorial",
+    "type": "documentation"
+  },
+  {
+    "id": 2,
+    "title": "API de Renderização Avançada",
+    "description": "Documentação completa da API para renderização de cenas complexas com múltiplas camadas.",
+    "image": "/api/placeholder/300/200",
+    "tags": ["api", "renderização", "avançado", "python"],
+    "author": "Maria Santos",
+    "authorRole": "Dev",
+    "likes": 67,
+    "saves": 34,
+    "comments": 8,
+    "downloads": 89,
+    "createdAt": "2024-01-20",
+    "category": "api",
+    "type": "api"
+  },
+  {
+    "id": 3,
+    "title": "Shader Nodes Customizados",
+    "description": "Como criar e implementar shader nodes personalizados para efeitos visuais únicos.",
+    "image": "/api/placeholder/300/200",
+    "tags": ["shader", "nodes", "material", "customização"],
+    "author": "Carlos Oliveira",
+    "authorRole": "Technical Artist",
+    "likes": 89,
+    "saves": 45,
+    "comments": 15,
+    "downloads": 234,
+    "createdAt": "2024-01-25",
+    "category": "tutorial",
+    "type": "documentation"
+  },
+  {
+    "id": 4,
+    "title": "Animação com Python Scripts",
+    "description": "Automatize suas animações usando scripts Python no Blender.",
+    "image": "/api/placeholder/300/200",
+    "tags": ["python", "animação", "script", "automação"],
+    "author": "Ana Costa",
+    "authorRole": "Dev",
+    "likes": 56,
+    "saves": 28,
+    "comments": 9,
+    "downloads": 123,
+    "createdAt": "2024-02-01",
+    "category": "tutorial",
+    "type": "documentation"
+  }
+]
+

@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "password": "admin123",
+    "name": "João Silva",
+    "role": "Admin",
+    "avatar": "/api/placeholder/64/64",
+    "email": "joao@blenderwiki.com"
+  },
+  {
+    "id": 2,
+    "username": "maria.santos",
+    "password": "maria123",
+    "name": "Maria Santos",
+    "role": "Dev",
+    "avatar": "/api/placeholder/64/64",
+    "email": "maria@blenderwiki.com"
+  },
+  {
+    "id": 3,
+    "username": "carlos.oliveira",
+    "password": "carlos123",
+    "name": "Carlos Oliveira",
+    "role": "Technical Artist",
+    "avatar": "/api/placeholder/64/64",
+    "email": "carlos@blenderwiki.com"
+  },
+  {
+    "id": 4,
+    "username": "ana.costa",
+    "password": "ana123",
+    "name": "Ana Costa",
+    "role": "Dev",
+    "avatar": "/api/placeholder/64/64",
+    "email": "ana@blenderwiki.com"
+  }
+]
+

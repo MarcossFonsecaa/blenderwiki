@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 207 91% 56%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222.2 84% 4.9%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 222.2 84% 4.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 207 91% 56%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 217.2 91.2% 59.8%;
+  --primary-foreground: 222.2 84% 4.9%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 224.3 76.3% 94.1%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+
+
+/* Estilos modernos com sombras (estilo Apple) */
+.modern-card {
+  border: none !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-in-out;
+}
+
+.modern-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.modern-button {
+  border: none !important;
+  box-shadow: 0 1px 3px rgba(39, 152, 245, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.modern-button:hover {
+  box-shadow: 0 4px 12px rgba(39, 152, 245, 0.3);
+  transform: translateY(-1px);
+}
+
+.modern-sidebar {
+  border: none !important;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.modern-input {
+  border: none !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-in-out;
+}
+
+.modern-input:focus {
+  box-shadow: 0 0 0 3px rgba(39, 152, 245, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Remover bordas padrão */
+.no-border {
+  border: none !important;
+}
+
+/* Syntax highlighting colors */
+.syntax-highlight {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.85em;
+}
+
+.syntax-js { background: linear-gradient(135deg, #f7df1e 0%, #f0c814 100%); color: #333; }
+.syntax-python { background: linear-gradient(135deg, #3776ab 0%, #306998 100%); color: white; }
+.syntax-css { background: linear-gradient(135deg, #1572b6 0%, #33a9dc 100%); color: white; }
+.syntax-html { background: linear-gradient(135deg, #e34f26 0%, #f06529 100%); color: white; }
+.syntax-json { background: linear-gradient(135deg, #000000 0%, #434343 100%); color: white; }
+
