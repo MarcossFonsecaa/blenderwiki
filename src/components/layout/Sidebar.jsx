@@ -17,7 +17,7 @@ const Sidebar = ({ currentUser, onShowLogin }) => {
   
   // Simular contador de perguntas do dia
   const todayQuestionsCount = 3
-  
+  const avatarUrl = `https://avatar.iran.liara.run/public/boy?username=${currentUser.name}`
   const menuItems = [
     { path: '/', icon: Home, label: 'Documentos' },
     { path: '/api', icon: Code, label: 'API' },
@@ -42,7 +42,7 @@ const Sidebar = ({ currentUser, onShowLogin }) => {
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center overflow-hidden">
                 {currentUser.avatar ? (
-                  <img src={currentUser.avatar} alt={currentUser.name} className="w-full h-full object-cover" />
+                  <img src={avatarUrl} alt={currentUser.name} className="w-full h-full object-cover" />
                 ) : (
                   <User size={20} className="text-primary-foreground" />
                 )}
