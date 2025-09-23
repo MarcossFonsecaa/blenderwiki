@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { 
@@ -7,23 +7,38 @@ import {
   MessageSquare, 
   Settings, 
   Plus, 
-  ChevronLeft, 
-  ChevronRight,
   User
 } from 'lucide-react'
 
 const Sidebar = ({ currentUser, onShowLogin }) => {
   const location = useLocation()
-  
+  const [avatarUrl, setAvatarUrl] = useState(null)
+
   // Simular contador de perguntas do dia
   const todayQuestionsCount = 3
-  const avatarUrl = `https://avatar.iran.liara.run/public/boy?username=${currentUser.name}`
+  
   const menuItems = [
     { path: '/', icon: Home, label: 'Documentos' },
     { path: '/api', icon: Code, label: 'API' },
     { path: '/forum', icon: MessageSquare, label: 'Fórum', badge: todayQuestionsCount },
     { path: '/settings', icon: Settings, label: 'Settings' }
   ]
+
+  // Gera / recupera avatar persistente
+  useEffect(() => {
+    if (currentUser?.name) {
+      const key = `avatar_${currentUser.name}`
+      let url = localStorage.getItem(key)
+
+      if (!url) {
+        // aqui você pode trocar "boy" por "girl", ou outro estilo do serviço
+        url = `https://avatar.iran.liara.run/public/boy?username=${encodeURIComponent(currentUser.name)}`
+        localStorage.setItem(key, url)
+      }
+
+      setAvatarUrl(url)
+    }
+  }, [currentUser])
 
   return (
     <div className="fixed left-0 top-0 h-full w-64 bg-sidebar modern-sidebar z-50">
@@ -41,8 +56,12 @@ const Sidebar = ({ currentUser, onShowLogin }) => {
           {currentUser ? (
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center overflow-hidden">
-                {currentUser.avatar ? (
-                  <img src={avatarUrl} alt={currentUser.name} className="w-full h-full object-cover" />
+                {avatarUrl ? (
+                  <img 
+                    src={avatarUrl} 
+                    alt={currentUser.name} 
+                    className="w-full h-full object-cover" 
+                  />
                 ) : (
                   <User size={20} className="text-primary-foreground" />
                 )}
@@ -128,4 +147,3 @@ const Sidebar = ({ currentUser, onShowLogin }) => {
 }
 
 export default Sidebar
-
